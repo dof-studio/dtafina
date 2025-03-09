@@ -13,3 +13,8 @@ and merged together with the experimental data sets using the date and time colu
 Two random variables have been included in the data set for testing the regression models 
 and to filter out non predictive attributes (parameters).
 
+## `FRED_US_GDP_Quarterly.csv`
+BEA Account Code: A191RC
+Gross domestic product (GDP), the featured measure of U.S. output, is the market value of the goods and services
+produced by labor and property located in the United States.For more information, see the Guide to the
+National Income and Product Accounts of the United States (NIPA) and the Bureau of Economic Analysis.
