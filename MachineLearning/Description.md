@@ -32,3 +32,13 @@ The classes are ordered and not balanced (e.g. there are munch more normal wines
 excellent or poor ones). Outlier detection algorithms could be used to detect the few excellent
 or poor wines. Also, we are not sure if all input variables are relevant. So
 it could be interesting to test feature selection methods. 
+
+## `breast_cancer_wisconsin_merge.csv`
+Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass.
+They describe characteristics of the cell nuclei present in the image. 
+A few of the images can be found at http://www.cs.wisc.edu/~street/images/
+Separating plane described above was obtained using Multisurface Method-Tree (MSM-T) 
+[K. P. Bennett, "Decision Tree Construction Via Linear Programming." Proceedings of the 4th Midwest Artificial 
+Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method which uses linear 
+programming to construct a decision tree.  Relevant features were selected using an exhaustive 
+search in the space of 1-4 features and 1-3 separating planes.
