@@ -19,6 +19,18 @@ Gross domestic product (GDP), the featured measure of U.S. output, is the market
 produced by labor and property located in the United States.For more information, see the Guide to the
 National Income and Product Accounts of the United States (NIPA) and the Bureau of Economic Analysis.
 
+## `CPI_USD_Quarterly.csv`
+The Consumer Price Index for All Urban Consumers: All Items (CPIAUCSL) is a price index of a basket of goods 
+and services paid by urban consumers. Percent changes in the price index measure the inflation rate between a
+ny two time periods. The most common inflation metric is the percent change from one year ago. 
+It can also represent the buying habits of urban consumers. This particular index includes roughly 88 percent 
+of the total population, accounting for wage earners, clerical workers, technical workers, self-employed, 
+short-term workers, unemployed, retirees, and those not in the labor force.
+The CPIs are based on prices for food, clothing, shelter, and fuels; transportation fares; service fees 
+(e.g., water and sewer service); and sales taxes. Prices are collected monthly from about 4,000 housing 
+units and approximately 26,000 retail establishments across 87 urban areas.
+
+
 ## `winequality-red.csv` and `winequality-white.csv`
 Two datasets are included, related to red and white vinho verde wine samples, from the north of Portugal. 
 The goal is to model wine quality based on physicochemical tests
