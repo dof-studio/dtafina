@@ -54,3 +54,8 @@ Separating plane described above was obtained using Multisurface Method-Tree (MS
 Intelligence and Cognitive Science Society, pp. 97-101, 1992], a classification method which uses linear 
 programming to construct a decision tree.  Relevant features were selected using an exhaustive 
 search in the space of 1-4 features and 1-3 separating planes.
+
+## `car.data.csv`
+Car Evaluation Database was derived from a simple hierarchical decision model originally developed for 
+the demonstration of DEX, M. Bohanec, V. Rajkovic: Expert system for decision making. 
+Sistemica 1(1), pp. 145-157, 1990.). The model evaluates whether a car is (unacceptable, acceptable, good, very good).
