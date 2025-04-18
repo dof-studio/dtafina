@@ -65,7 +65,7 @@ The data is related with direct marketing campaigns (phone calls) of a Portugues
 The classification goal is to predict if the client will subscribe a term deposit (variable y).
 bank-full.csv with all examples and 17 inputs, ordered by date (older version of this dataset with less inputs). 
 Input variables:
-* bank client data:
+-> bank client data:
 1 - age (numeric)
 2 - job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student",
                                     "blue-collar","self-employed","retired","technician","services") 
@@ -75,12 +75,12 @@ Input variables:
 6 - balance: average yearly balance, in euros (numeric) 
 7 - housing: has housing loan? (binary: "yes","no")
 8 - loan: has personal loan? (binary: "yes","no")
-* related with the last contact of the current campaign:
+-> related with the last contact of the current campaign:
 9 - contact: contact communication type (categorical: "unknown","telephone","cellular") 
 10 - day: last contact day of the month (numeric)
 11 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
 12 - duration: last contact duration, in seconds (numeric)
-* other attributes:
+-> other attributes:
 13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
 14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
 15 - previous: number of contacts performed before this campaign and for this client (numeric)
@@ -94,7 +94,7 @@ This dataset is almost identical to the one used in [Moro et al., 2014] (it does
 Using the rminer package and R tool (http://cran.r-project.org/web/packages/rminer/), we found that the addition of the five new social and economic 
 attributes (made available here) lead to substantial improvement in the prediction of a success, 
 even when the duration of the call is not included. Note: the file can be read in R using: d=read.table("bank-additional-full.csv",header=TRUE,sep=";")
-* social and economic context attributes
+-> social and economic context attributes
 16 - emp.var.rate: employment variation rate - quarterly indicator (numeric)
 17 - cons.price.idx: consumer price index - monthly indicator (numeric)     
 18 - cons.conf.idx: consumer confidence index - monthly indicator (numeric)     
