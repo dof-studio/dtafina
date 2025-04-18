@@ -59,3 +59,44 @@ search in the space of 1-4 features and 1-3 separating planes.
 Car Evaluation Database was derived from a simple hierarchical decision model originally developed for 
 the demonstration of DEX, M. Bohanec, V. Rajkovic: Expert system for decision making. 
 Sistemica 1(1), pp. 145-157, 1990.). The model evaluates whether a car is (unacceptable, acceptable, good, very good).
+
+## `bank-full.csv`
+The data is related with direct marketing campaigns (phone calls) of a Portuguese banking institution. 
+The classification goal is to predict if the client will subscribe a term deposit (variable y).
+bank-full.csv with all examples and 17 inputs, ordered by date (older version of this dataset with less inputs). 
+Input variables:
+* bank client data:
+1 - age (numeric)
+2 - job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student",
+                                    "blue-collar","self-employed","retired","technician","services") 
+3 - marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
+4 - education (categorical: "unknown","secondary","primary","tertiary")
+5 - default: has credit in default? (binary: "yes","no")
+6 - balance: average yearly balance, in euros (numeric) 
+7 - housing: has housing loan? (binary: "yes","no")
+8 - loan: has personal loan? (binary: "yes","no")
+* related with the last contact of the current campaign:
+9 - contact: contact communication type (categorical: "unknown","telephone","cellular") 
+10 - day: last contact day of the month (numeric)
+11 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
+12 - duration: last contact duration, in seconds (numeric)
+* other attributes:
+13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
+15 - previous: number of contacts performed before this campaign and for this client (numeric)
+16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+
+## `bank-additional-full.csv`
+This dataset is based on "Bank Marketing" UCI dataset (please check the description at: http://archive.ics.uci.edu/ml/datasets/Bank+Marketing).
+The data is enriched by the addition of five new social and economic features/attributes (national wide indicators from a ~10M population country), 
+published by the Banco de Portugal and publicly available at: https://www.bportugal.pt/estatisticasweb.
+This dataset is almost identical to the one used in [Moro et al., 2014] (it does not include all attributes due to privacy concerns). 
+Using the rminer package and R tool (http://cran.r-project.org/web/packages/rminer/), we found that the addition of the five new social and economic 
+attributes (made available here) lead to substantial improvement in the prediction of a success, 
+even when the duration of the call is not included. Note: the file can be read in R using: d=read.table("bank-additional-full.csv",header=TRUE,sep=";")
+* social and economic context attributes
+16 - emp.var.rate: employment variation rate - quarterly indicator (numeric)
+17 - cons.price.idx: consumer price index - monthly indicator (numeric)     
+18 - cons.conf.idx: consumer confidence index - monthly indicator (numeric)     
+19 - euribor3m: euribor 3 month rate - daily indicator (numeric)
+20 - nr.employed: number of employees - quarterly indicator (numeric)
