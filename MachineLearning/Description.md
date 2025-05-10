@@ -100,3 +100,13 @@ even when the duration of the call is not included. Note: the file can be read i
 18 - cons.conf.idx: consumer confidence index - monthly indicator (numeric)     
 19 - euribor3m: euribor 3 month rate - daily indicator (numeric)
 20 - nr.employed: number of employees - quarterly indicator (numeric)
+
+## `opt-minist-digits-merged.csv`
+We used preprocessing programs made available by NIST to extract normalized bitmaps of handwritten digits from 
+a preprinted form. From a total of 43 people, 30 contributed to the training set and different 13 to the test set. 
+32x32 bitmaps are divided into nonoverlapping blocks of 4x4 and the number of on pixels are counted in each block. 
+This generates an input matrix of 8x8 where each element is an integer in the range 0..16. 
+This reduces dimensionality and gives invariance to small distortions.
+For Each Attribute:
+All input attributes are integers in the range 0-16.
+The last attribute is the class code 0-9
