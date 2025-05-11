@@ -110,3 +110,8 @@ This reduces dimensionality and gives invariance to small distortions.
 For Each Attribute:
 All input attributes are integers in the range 0-16.
 The last attribute is the class code 0-9
+
+## `spx-choice-daily-2005-processed.csv`
+Standard and Poor daily price data and processed Moving Average, and return data.
+It is good for training an RNN or LSTM for teaching purposes.
+
