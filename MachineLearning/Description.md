@@ -115,3 +115,8 @@ The last attribute is the class code 0-9
 Standard and Poor daily price data and processed Moving Average, and return data.
 It is good for training an RNN or LSTM for teaching purposes.
 
+## `eur_usd_processesd.csv`
+EUR / USD Daily Exchange rate with processde Moving Average, and return data.
+It is good for training an RNN or LSTM for teaching purposes.
+
+
